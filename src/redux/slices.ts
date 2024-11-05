@@ -3,7 +3,7 @@ import { Claim, GenericPayload, Policy } from "../types/redux";
 import { v4 } from "uuid";
 import { initialClaim, initialPolicy } from "./initials";
 
-const treasureSlice = createSlice({
+export const treasureSlice = createSlice({
   name: "trueasure",
   initialState: 7500,
   reducers: {
@@ -22,7 +22,7 @@ const treasureSlice = createSlice({
   },
 });
 
-const claimsSlice = createSlice({
+export const claimsSlice = createSlice({
   name: "claims",
   initialState: [initialClaim],
   reducers: {
@@ -43,7 +43,7 @@ const claimsSlice = createSlice({
   },
 });
 
-const policiesSlice = createSlice({
+export const policiesSlice = createSlice({
   name: "policies",
   initialState: [initialPolicy],
   reducers: {
