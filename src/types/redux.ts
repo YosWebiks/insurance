@@ -17,5 +17,6 @@ export interface Policy {
 export interface GenericPayload {
   id?: string;
   amount?: number;
-  policy_id?:string
+  policy_id?: string;
+  price?: number;
 }

@@ -60,7 +60,7 @@ export const policiesSlice = createSlice({
     updatePolicy: (state: Policy[], action: PayloadAction<GenericPayload>) => {
       let policy = state.find((policy) => policy.id === action.payload.id!);
       if (policy) {
-        policy.price = action.payload.amount!;
+        policy.price = action.payload.price!;
       }
     },
   },
