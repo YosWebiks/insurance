@@ -14,7 +14,7 @@
   grid-template-rows: 20% auto;
   grid-template-columns: 15% auto;
   grid-template-areas:
-    "a h"
+    "h h"
     "a m";
 }
 
@@ -32,9 +32,22 @@
 
 .app > main {
   grid-area: m;
+  padding: 10px;
 }
 
 .full {
   height: 100%;
   width: 100%;
 }
+
+.nav-it{
+  width: 100%;
+  padding: 8px 15px;
+  border-bottom: 2px solid;
+  color: #000;
+}
+.nav-it.active{
+  color: #fff;
+  background-color: #000;
+}
+

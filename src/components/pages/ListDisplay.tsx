@@ -7,6 +7,16 @@ interface Props {
 
 export default function ListDisplay({pageType}:Props ){
   return (
-    <div>ListDisplay ft. {pageType.toLowerCase()}</div>
+    <div>
+        ListDisplay ft. {pageType.toLowerCase()}
+
+        {/* { ([].map((it:any)=>{
+            if (pageType == PageType.CLAIMS) {
+                return
+            }else{
+                return
+            }
+        })} */}
+    </div>
   )
 }

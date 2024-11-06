@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Claims from "./claims/Claims";
 import Policies from "./policies/Policies";
 import PolicyDetails from "./policies/PolicyDetails";
-import ClaimDedails from "./claims/ClaimDedails";
+import ClaimDedails from "./claims/ClaimDetails";
 
 export default function Page() {
   return (
