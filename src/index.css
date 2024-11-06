@@ -11,7 +11,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 20% auto ;
+  grid-template-rows: 20% auto;
   grid-template-columns: 15% auto;
   grid-template-areas:
     "a h"
@@ -32,4 +32,9 @@
 
 .app > main {
   grid-area: m;
+}
+
+.full {
+  height: 100%;
+  width: 100%;
 }
