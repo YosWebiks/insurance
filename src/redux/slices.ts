@@ -8,7 +8,8 @@ export const treasureSlice = createSlice({
   initialState: 7500,
   reducers: {
     addNewPolicy: (state: number, action: PayloadAction<GenericPayload>) => {
-      state += action.payload.amount!;
+      console.log("Here hopfully")
+      state += action.payload.price!;
     },
     deletePolicy: (state: number, action: PayloadAction<GenericPayload>) => {
       state -= action.payload.amount!;
@@ -30,7 +31,7 @@ export const claimsSlice = createSlice({
       state.push({
         ...action.payload,
         id: v4(),
-        created_at: new Date(),
+        // created_at:  Date.now(),
         approved: false,
       } as Claim);
     },
@@ -51,7 +52,7 @@ export const policiesSlice = createSlice({
       state.push({
         ...action.payload,
         id: v4(),
-        created_at: new Date()
+        // created_at: Date.now()
       } as Policy);
     },
     deletePolicy: (state: Policy[], action: PayloadAction<GenericPayload>) => {
