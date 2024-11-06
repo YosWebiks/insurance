@@ -1,7 +1,12 @@
 import React from 'react'
+import { PageType } from '../../types/enums'
 
-export default function ListDisplay() {
+interface Props {
+    pageType:PageType
+}
+
+export default function ListDisplay({pageType}:Props ){
   return (
-    <div>ListDisplay</div>
+    <div>ListDisplay ft. {pageType.toLowerCase()}</div>
   )
 }
