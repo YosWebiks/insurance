@@ -21,4 +21,5 @@ export interface GenericPayload {
   price?: number;
   name?: string;
   age?: number;
+  created_at?: number;
 }

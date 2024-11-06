@@ -9,7 +9,9 @@ export default function AddNewPolicy() {
   const dispatch = useDispatch()
 
   const handleSubmit = () => {
-    dispatch(addNewPolicy({name,age,price}))
+    // dispatch(addNewPolicy({name,age,price}))
+    dispatch({type: "policies/addNewPolicy",payload:{name,age,price}})
+    dispatch({type: "treasure/addNewPolicy",payload:{name,age,price}})
     setName("")
   };
 

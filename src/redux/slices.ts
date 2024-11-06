@@ -4,12 +4,13 @@ import { v4 } from "uuid";
 import { initialClaim, initialPolicy } from "./initials";
 
 export const treasureSlice = createSlice({
-  name: "trueasure",
+  name: "treasure",
   initialState: 7500,
   reducers: {
     addNewPolicy: (state: number, action: PayloadAction<GenericPayload>) => {
-      console.log("Here hopfully")
+      console.log("Here hopfully", action.payload)
       state += action.payload.price!;
+      return state
     },
     deletePolicy: (state: number, action: PayloadAction<GenericPayload>) => {
       state -= action.payload.amount!;
@@ -31,7 +32,7 @@ export const claimsSlice = createSlice({
       state.push({
         ...action.payload,
         id: v4(),
-        // created_at:  Date.now(),
+        created_at:  Date.now(),
         approved: false,
       } as Claim);
     },
@@ -52,7 +53,7 @@ export const policiesSlice = createSlice({
       state.push({
         ...action.payload,
         id: v4(),
-        // created_at: Date.now()
+        created_at: Date.now()
       } as Policy);
     },
     deletePolicy: (state: Policy[], action: PayloadAction<GenericPayload>) => {
