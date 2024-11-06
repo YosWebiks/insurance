@@ -11,7 +11,7 @@ export const initialPolicy:Policy = {
 
 export const initialClaim:Claim = {
   amount: 30000,
-  approved: true,
+  approved: false,
   created_at: new Date(),
   id: v4(),
   policy_id: initialPolicy.id,
