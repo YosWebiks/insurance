@@ -11,7 +11,7 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 20% auto;
+  grid-template-rows: 30% auto;
   grid-template-columns: 15% auto;
   grid-template-areas:
     "h h"
@@ -49,5 +49,23 @@
 .nav-it.active{
   color: #fff;
   background-color: #000;
+}
+
+header> .full{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header> .full> h1{
+  font-weight: 700;
+}
+
+.stats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
