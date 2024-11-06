@@ -7,3 +7,29 @@
   font-weight: 400;
 }
 
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% auto ;
+  grid-template-columns: 15% auto;
+  grid-template-areas:
+    "a h"
+    "a m";
+}
+
+.app > * {
+  border: 1px solid;
+}
+
+.app > header {
+  grid-area: h;
+}
+
+.app > aside {
+  grid-area: a;
+}
+
+.app > main {
+  grid-area: m;
+}
